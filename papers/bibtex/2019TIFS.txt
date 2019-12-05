@@ -1,4 +1,4 @@
-@ARTICLE{8501936,
+@ARTICLE{Li2019
 author={Y. M. {Li} and J. T. {Zhou}},
 journal={IEEE Transactions on Information Forensics and Security},
 title={Fast and Effective Image Copy-Move Forgery Detection via Hierarchical Feature Point Matching},
@@ -7,3 +7,11 @@ volume={14},
 number={5},
 pages={1307-1322},
 month={May},}
+
+@InProceedings{Li2016,
+  Title                    = {Image copy-move forgery detection using hierarchical feature point matching},
+  Author                   = {Y. Li and J. Zhou},
+  Booktitle                = {Proc. Asia-Pacific Signal and Inf. Process. Association Annual Summit and Conf},
+  Year                     = {2016},
+  Pages                    = {1-4}
+}

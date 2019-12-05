@@ -1,0 +1,9 @@
+@InProceedings{Li2016,
+author={H. W. {Hu} and J. T. {Zhou} and Y. M. {Li}},
+Title = {Image Reconstruction from Local Descriptors Using Conditional Adversarial Networks},
+Booktitle ={Proc. Asia-Pacific Signal and Inf. Process. Association Annual Summit and Conf},
+year={2019},
+volume={},
+number={},
+pages={1-1},
+month={},}
