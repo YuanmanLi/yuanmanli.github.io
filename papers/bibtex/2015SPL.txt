@@ -1,0 +1,9 @@
+@ARTICLE{7222384,
+author={Y. {Li} and J. {Zhou}},
+journal={IEEE Signal Processing Letters},
+title={Anti-Forensics of Lossy Predictive Image Compression},
+year={2015},
+volume={22},
+number={12},
+pages={2219-2223},
+month={Dec},}

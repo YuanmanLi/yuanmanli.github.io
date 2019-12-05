@@ -1,0 +1,10 @@
+@ARTICLE{7987728,
+author={Y. {Li} and J. {Zhou} and A. {Cheng}},
+journal={IEEE Transactions on Information Forensics and Security},
+title={SIFT Keypoint Removal via Directed Graph Construction for Color Images},
+year={2017},
+volume={12},
+number={12},
+pages={2971-2985},
+ISSN={1556-6021},
+month={Dec},}

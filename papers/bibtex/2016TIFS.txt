@@ -1,0 +1,9 @@
+@ARTICLE{7452396,
+author={Y. {Li} and J. {Zhou} and A. {Cheng} and X. {Liu} and Y. Y. {Tang}},
+journal={IEEE Transactions on Information Forensics and Security},
+title={SIFT Keypoint Removal and Injection via Convex Relaxation},
+year={2016},
+volume={11},
+number={8},
+pages={1722-1735},
+month={Aug},}
