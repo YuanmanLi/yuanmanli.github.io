@@ -1,0 +1,9 @@
+@ARTICLE{8501936,
+author={Y. M. {Li} and J. T. {Zhou}},
+journal={IEEE Transactions on Information Forensics and Security},
+title={Fast and Effective Image Copy-Move Forgery Detection via Hierarchical Feature Point Matching},
+year={2019},
+volume={14},
+number={5},
+pages={1307-1322},
+month={May},}

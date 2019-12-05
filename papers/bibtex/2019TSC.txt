@@ -1,0 +1,9 @@
+@ARTICLE{8691490,
+author={J. {Duan} and J. {Zhou} and Y. {Li}},
+journal={IEEE Transactions on Services Computing},
+title={Secure and Verifiable Outsourcing of Large-scale Nonnegative Matrix Factorization (NMF)},
+year={2019},
+volume={},
+number={},
+pages={1-1},
+month={},}
