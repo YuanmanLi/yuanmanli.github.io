@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    transition: all .5s;
+}
+ul {
+    margin-bottom: 6px;
+}
+ul>li {
+    line-height: 30px;
+    list-style: none;
+}
+ul.has>li::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 30px;
+    border: 4px solid black;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+h2 {
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+}
+.box {
+    margin: 0 120px;
+}
+.introduction>div {
+    clear: both;
+}
+.introduction img {
+    float:left; 
+    margin:0 10px 10px 0;
+    width: 150px;
+}
+.introduction p {
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.blue {
+    color: blue;
+    font-weight: 900;
+    font-size: 20px;
+}
+.paper {
+    border: 1px dashed red;
+    border-right: none;
+    border-left: none;
+    padding: 10px 0 10px 30px;
+    margin: 20px 0;
+}
+span.new {
+    color: red
+}
+.publish {
+    list-style: none;
+}
+span.yml {
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+    
+}
+.red {
+    color: red;
+    font-weight: normal;
+}
+.contact {
+    font-size: 26px;
+    margin: 18px 0;
+}
+.email, .office {
+    line-height: 30px;
+}
+.conference, .journal, .publish {
+    text-indent: -1.5em;
+}
+.conference>li, .journal>li, .publish>li {
+    margin-left: 1.5em;
+}
+.subtitle {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 6px auto;
+}
+.lxfs {
+    height: 280px;
+}
+.nav_ul {
+    background-color: #00a2ca;
+    height: 60px;
+    padding: 0 120px;
+}
+.nav_ul li {
+    float: left;
+}
+.nav_ul li a {
+    display: inline-block;
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.nav_ul li a:hover {
+    background-color: #0095bb;
+}
+.totop {
+    position: fixed;
+    bottom: 10%;
+    right: 4%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 auto;
+    background-image: url(../image/totop.png);
+    background-size: 30px;
+    cursor: pointer;
+}
