@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF Viewer1</title>
+  <title>aaa</title>
   <style>
     body {
       margin: 0;
@@ -15,11 +15,54 @@
       width: 100%;
       height: 100vh;
     }
+
+    canvas {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
-  <div id="pdf-container">
-    <embed src="./CV-YuanmanLi.pdf" type="application/pdf" width="100%" height="100%">
-  </div>
+  <div id="pdf-container"></div>
+
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var pdfContainer = document.getElementById("pdf-container");
+
+      // Specify the path to your PDF file relative to the HTML file
+      var pdfPath = "./CV-YuanmanLi.pdf";
+
+      // Loading document
+      pdfjsLib.getDocument(pdfPath).promise.then(function (pdfDoc) {
+        // Iterate through each page and append to the viewer
+        for (var pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+          pdfDoc.getPage(pageNum).then(function (page) {
+            var canvas = document.createElement("canvas");
+            var context = canvas.getContext("2d");
+            pdfContainer.appendChild(canvas);
+
+            // Set canvas dimensions to match the viewport
+            var viewport = page.getViewport({ scale: 1.5 });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+
+            // Render PDF page into canvas context
+            page.render({
+              canvasContext: context,
+              viewport: viewport,
+            }).promise.catch(function (error) {
+              console.error("Error rendering page:", error);
+            });
+          }).catch(function (error) {
+            console.error("Error loading page:", error);
+          });
+        }
+      }).catch(function (error) {
+        console.error("Error loading PDF:", error);
+      });
+    });
+  </script>
 </body>
 </html>
