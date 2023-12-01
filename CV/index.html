@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aaa</title>
+  <title>bb</title>
   <style>
     body {
       margin: 0;
@@ -26,13 +26,15 @@
 <body>
   <div id="pdf-container"></div>
 
-  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <!-- Use local PDF.js file -->
+  <script src="pdf.min.js"></script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       var pdfContainer = document.getElementById("pdf-container");
 
       // Specify the path to your PDF file relative to the HTML file
-      var pdfPath = "./CV-YuanmanLi.pdf";
+      var pdfPath = "CV-YuanmanLi.pdf";
 
       // Loading document
       pdfjsLib.getDocument(pdfPath).promise.then(function (pdfDoc) {
