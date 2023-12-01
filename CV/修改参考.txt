@@ -1,0 +1,10 @@
+英文符号  "" :
+ctrl+f 找【 </style> 】
+
+写入padding样式
+
+// 其他样式
+    body{
+        padding: 0 calc((100vw - 70%) / 2);
+    }
+</style>
