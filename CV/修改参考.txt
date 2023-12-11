@@ -1,7 +1,8 @@
-直接word另存为html
+1. 直接word另存为html
 
 
-英文符号  "" :
+2. 英文符号  "" :
+
 ctrl+f 找【 </style> 】
 
 写入padding样式
