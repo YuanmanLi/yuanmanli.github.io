@@ -29,7 +29,7 @@ const data = {
 
     // Honors & Awards
     awards: [
-        "First Advisor, Zhao Zhiwei, Zhong Qiyue, Huang Qiutong, 'Design and Implementation of Deep Face Swapping Tracing Algorithm Based on Diffusion Model', The 7th China Graduate Artificial Intelligence Innovation Competition (2025)",
+        "First Advisor, Zhao Zhiwei, Zhong Qiyue, Huang Qiutong, 'Design and Implementation of Deep Face Swapping Tracing Algorithm Based on Diffusion Model', The 7th China Graduate Artificial Intelligence Innovation Competition, First Prize (2025)",
         "Macau Natural Science Award (Third Prize, Rank 2), Macau SAR (2022)",
         "Shenzhen Excellent Science and Technology Innovation Talent, SZSTI (2022)",
         "Macau Postgraduate Science and Technology R&D Award, FDCT (2018)",
