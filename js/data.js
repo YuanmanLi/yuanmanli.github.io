@@ -20,7 +20,7 @@ const data = {
         <p>长期从事多媒体信息安全、计算机视觉等领域的科研工作，获评深圳市“孔雀计划”海外高层次人才C类。主持多项国家自然科学基金项目、省部级自然科学基金项目以及上市企业横向项目，在 T-IFS、T-SC、T-CSVT、T-MM、T-NNLS、T-NSE、CVPR、ACM MM、AAAI 等国际权威期刊和会议上发表论文60余篇，研究成果荣获2022年澳门科学技术自然科学奖。担任信号处理国际著名期刊 IEEE Signal Processing Letters (SPL) 副编辑，IEEE Transactions on Image Processing、IEEE Transactions on Information Forensics and Security 等多个期刊审稿人，以及多个国际会议的领域主席。</p>`
     },
 
-    // 教学科目
+    // 教学科目	
     teaching: [
         "大数据分析（本科生）",
         "专业综合设计（本科生）",
@@ -58,6 +58,7 @@ const data = {
     news: [
         { tag: "<span class='red'>New!!!</span>", content: "团队荣获2025第七届中国研究生人工智能创新大赛全国一等奖" },
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TAI 2025</b>" },
+		{ tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TAC 2025</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "Two papers are accepted in <b>TDSC 2025</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TITS 2025</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TIP  2025</b>" },
@@ -93,6 +94,7 @@ const data = {
     // 注意：无需手动加 span，系统会自动高亮名字
     journal_papers: `
 Yuanman Li, Zhiwei Zhao, Jiaxiong Ye, Yulong Zheng, Bin Li, Rongrong Ni, Wei Wang, and Xia Li,"Adaptive Container Characterization via Language Mapping for Video Integrity and Source Analysis," IEEE Transactions on artificial intelligence (T-AI), in press, 2025.
+Qifeng Lai,Han Liu,Yuanman Li,Zhiguo Gong and Wei Wang, "Emotions Like Human: Self-Supervised Emotion Label Augmentation for Emotion Recognition in Conversation"， IEEE Transactions on Affective Computing (T-AC), in press, 2025.
 F. Yan, Fangjun Yan, Xiaojian Ji, Li Dong, Weiwei Sun, Yuanman Li, “Universal and Quality-Preserving Watermark Removal Based on Unpaired Learning,” IEEE Transactions on Dependable and Secure Computing (T-DSC), in press, 2025.
 H. Wu, Y. Chen, J. Zhou and Y. M. Li, "Rethinking Image Forgery Detection via Soft Contrastive Learning and Unsupervised Clustering," IEEE Transactions on Dependable and Secure Computing (T-DSC), vol. 22, no. 6, pp. 6296-6308, 2025.
 Enji Liang, Kuiyuan Zhang, Zhongyun Hua, Yuanman Li, and Xiaohua Jia, “TransCMFD: An adaptive transformer for copy-move forgery detection,” Neurocomputing, Volume 638, 2025.
