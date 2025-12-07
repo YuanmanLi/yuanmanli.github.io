@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Elegant Academic Palette */
+    --primary-text: #1e293b;    /* Slate 800 - Deep Blue-Grey */
+    --secondary-text: #475569;  /* Slate 600 */
+    --muted-text: #94a3b8;      /* Slate 400 */
+    --accent-color: #334155;    /* Slate 700 - Very professional dark grey/blue */
+    --highlight-color: #0369a1; /* Sky 700 - Subtle highlight for links */
+    
+    --bg-color: #ffffff;
+    --sidebar-bg: #f8fafc;      /* Slate 50 */
+    --border-color: #e2e8f0;    /* Slate 200 */
+    
+    --sidebar-width: 300px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'Microsoft YaHei', 'Segoe UI', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-text);
+    line-height: 1.65;
+    font-size: 15px;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0c4a6e;
+}
+
+/* Layout */
+.app-container {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    background: var(--sidebar-bg);
+    padding: 40px 30px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.profile-header {
+    margin-bottom: 30px;
+    text-align: center; /* Center align text */
+    width: 100%;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin: 0 auto 15px; /* Center image */
+    display: block;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.profile-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-text);
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.chinese-name {
+    font-family: "KaiTi", "STKaiti", "楷体", "Microsoft YaHei", serif;
+    font-size: 1.5rem; /* Larger for calligraphy effect */
+    font-weight: normal;
+    margin-top: 8px;
+    letter-spacing: 4px; /* Space out characters */
+    color: #333;
+}
+
+.profile-title {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.lang-btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 18px;
+    background-color: #fff;
+    color: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.lang-btn:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+    border-color: var(--highlight-color);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Sidebar Navigation */
+.nav-menu {
+    list-style: none;
+    margin: 20px 0;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.nav-menu li {
+    margin-bottom: 4px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* More padding for click area */
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease; /* Smooth transition */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 2px;
+}
+
+.nav-link i {
+    width: 24px;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--muted-text);
+    font-size: 0.95rem; /* Slightly larger icon */
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--highlight-color); /* Darker blue text */
+    background-color: #e0f2fe; /* Light blue background */
+    transform: translateX(5px); /* Slide right */
+    text-decoration: none;
+}
+
+.nav-link:hover i {
+    color: var(--highlight-color);
+}
+
+.nav-link.active {
+    color: var(--highlight-color);
+    background-color: #e0f2fe; /* Active state background */
+    font-weight: 600;
+}
+
+.nav-link.active i {
+    color: var(--highlight-color);
+}
+
+/* Sidebar Contact */
+.contact-info {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+}
+
+.contact-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.4;
+}
+
+.contact-item i {
+    margin-top: 3px;
+    color: var(--muted-text);
+    width: 16px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column; /* Vertical stack */
+    gap: 8px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+}
+
+.social-links a i {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+.social-links a:hover {
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    background-color: #f0f9ff;
+    transform: translateX(3px); /* Slide right slightly */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    padding: 60px 70px;
+}
+
+/* Typography for Sections */
+section {
+    margin-bottom: 60px;
+    scroll-margin-top: 40px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-color); /* Use the dark slate color */
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+}
+
+.section-title i {
+    margin-right: 12px;
+    color: var(--muted-text); /* Subtle icon color */
+    font-size: 0.9em;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin: 30px 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 18px;
+    background: var(--muted-text);
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+/* Bio Text */
+.bio-text {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+}
+
+.bio-text p {
+    margin-bottom: 12px; /* Adds space between paragraphs */
+}
+
+.bio-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Style Lists (Education, News, etc) */
+.news-list, .compact-list, .pub-list {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid var(--border-color); /* The timeline line */
+    margin-left: 8px; /* Offset for the line */
+}
+
+/* News Specific */
+.news-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.news-item::before {
+    /* Timeline dot */
+    content: '';
+    position: absolute;
+    left: -27px; /* Adjust based on padding + border */
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--muted-text);
+}
+
+.news-tag {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    min-width: 60px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    text-align: right;
+    opacity: 0.8;
+}
+
+.news-content {
+    color: var(--secondary-text);
+}
+
+/* Compact Lists (Teaching, Awards) */
+.compact-list li {
+    position: relative;
+    padding-left: 0; /* Removed bullet padding */
+    margin-bottom: 10px;
+    color: var(--secondary-text);
+}
+
+/* Reusing the timeline styling for compact lists if desired, or keeping simple bullets */
+/* Let's make compact-list simpler but cleaner */
+.compact-list {
+    border-left: none; /* Remove timeline line for simple lists to vary style */
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.compact-list li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.compact-list li::before {
+    content: "•";
+    color: var(--muted-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+/* Publications - The Core */
+.pub-list {
+    border-left: none; /* No timeline line for papers */
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.pub-item {
+    margin-bottom: 15px;
+    padding-left: 35px; /* Space for [1] */
+    color: var(--secondary-text);
+    line-height: 1.6;
+    position: relative; /* For absolute index */
+    display: block; /* Ensure block layout, not flex */
+}
+
+.pub-index {
+    font-weight: 600;
+    color: var(--muted-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    font-size: 0.9rem;
+}
+
+.highlight-author {
+    font-weight: 700;
+    color: var(--primary-text);
+}
+
+.red {
+    color: #ef4444; /* Bright Red */
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .app-container { flex-direction: column; }
+    .sidebar { 
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+        border-right: none; 
+        border-bottom: 1px solid var(--border-color);
+        padding: 30px 20px;
+    }
+    .main-content { margin-left: 0; padding: 40px 20px; }
+    .nav-menu { display: none; } 
+    .news-item { flex-direction: column; }
+    .news-tag { text-align: left; margin-bottom: 4px; }
+    .news-item::before { display: none; /* Hide dots on mobile */ }
+    .news-list { border-left: none; padding-left: 0; }
+}
