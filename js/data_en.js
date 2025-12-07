@@ -93,7 +93,7 @@ const data = {
     // Note: System automatically highlights 'Yuanman Li' variants
     journal_papers: `
 Yuanman Li, Zhiwei Zhao, Jiaxiong Ye, Yulong Zheng, Bin Li, Rongrong Ni, Wei Wang, and Xia Li,"Adaptive Container Characterization via Language Mapping for Video Integrity and Source Analysis," IEEE Transactions on artificial intelligence (T-AI), in press, 2025.
-Qifeng Lai,Han Liu,Yuanman Li,Zhiguo Gong and Wei Wang, "Emotions Like Human: Self-Supervised Emotion Label Augmentation for Emotion Recognition in Conversation"， IEEE Transactions on Affective Computing (T-AC), in press, 2025.
+Qifeng Lai,Han Liu,Yuanman Li,Zhiguo Gong and Wei Wang, "Emotions Like Human: Self-Supervised Emotion Label Augmentation for Emotion Recognition in Conversation," IEEE Transactions on Affective Computing (T-AC), in press, 2025.
 F. Yan, Fangjun Yan, Xiaojian Ji, Li Dong, Weiwei Sun, Yuanman Li, “Universal and Quality-Preserving Watermark Removal Based on Unpaired Learning,” IEEE Transactions on Dependable and Secure Computing (T-DSC), in press, 2025.
 H. Wu, Y. Chen, J. Zhou and Y. M. Li, "Rethinking Image Forgery Detection via Soft Contrastive Learning and Unsupervised Clustering," IEEE Transactions on Dependable and Secure Computing (T-DSC), vol. 22, no. 6, pp. 6296-6308, 2025.
 Enji Liang, Kuiyuan Zhang, Zhongyun Hua, Yuanman Li, and Xiaohua Jia, “TransCMFD: An adaptive transformer for copy-move forgery detection,” Neurocomputing, Volume 638, 2025.
