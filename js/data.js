@@ -60,6 +60,7 @@ const data = {
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TAI 2025</b>" },
 		{ tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TAC 2025</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "Two papers are accepted in <b>TDSC 2025</b>" },
+		{ tag: "<span class='red'>New!!!</span>", content: "one papers is accepted in <b>AAAI 2026</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TITS 2025</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>TIP  2025</b>" },
         { tag: "<span class='red'>New!!!</span>", content: "One paper is accepted in <b>NeurIPS 2025</b>" },
@@ -136,6 +137,7 @@ J. Duan, J. T. Zhou and Yuanman Li, “Privacy-Preserving distributed deep learn
 
     // 论文列表 - 会议 (Conference)
     conference_papers: `
+Yuhao He, Jinyu Tian, Xianwei Zheng, Li Dong, Yuanman Li, Jiantao Zhou, "Deferred Poisoning: Making the Model More Vulnerable via Hessian Singularization" AAAI Conference on Artificial Intelligence (AAAI), 2026. 
 Han Liu, Jiaqi Li, Zhi Xu, Xiaotong Zhang, Xiaoming Xu, Fenglong Ma, Yuanman Li, Hong Yu， “HQA-VLAttack: Towards High Quality Adversarial Attack on Vision-Language Pre-Trained Models”, NeurIPS, 2025.
 Yuanman Li, J. T. Zhou, X. W. Zheng, J. Y. Tian and Y. Y. Tang, “Robust Subspace Clustering with Independent and Piecewise Identically Distributed (i.p.i.d.) Noise Modeling”, IEEE Conf. Comput. Vis. and Pattern Recogn. (CVPR), 2019 (oral, top 5% paper).
 Yuchao Su，Yuanman Li*, Wei Wang, Jiantao Zhou, and Xia Li, “A Unified Environmental Network for Pedestrian Trajectory Prediction”, AAAI Conference on Artificial Intelligence (AAAI), 2024，
